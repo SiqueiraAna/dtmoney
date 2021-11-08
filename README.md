@@ -1,7 +1,7 @@
 ## DT MONEY
 
-# :rocket: Technologies
-This project was made using the follow technologies:
+# :rocket: Tecnologias
+Este projeto foi realizado utilizando as seguintes tecnologias:
 
 * [Typescript](https://www.typescriptlang.org/)      
 * [React](https://reactjs.org/)      
