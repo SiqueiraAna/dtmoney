@@ -4,9 +4,10 @@ export const GlobalStyle = createGlobalStyle `
     :root {
         --background: #f0f2f5;
         --red: #e52e4d;
-        --blue: #5429cc;
+        --blue: #5429CC;
+;
 
-        --blue-light: #6933FF;
+        --blue-light: #6933FF; // cor do botão Nova transação
 
         --text-title: #363f5f;
         --text-body: #969cb3;
