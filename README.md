@@ -9,3 +9,4 @@ Este projeto foi realizado utilizando as seguintes tecnologias:
 * [React](https://reactjs.org/)      
 * [Styled Components](https://styled-components.com/)
 * [MirageJS](https://miragejs.com/)
+* [Axios]()
