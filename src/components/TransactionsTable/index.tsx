@@ -32,7 +32,7 @@ import { Container } from "./styles";
                     <tr>
                     <td>Monitor Samsung</td>
                     <td className="deposit">R$900,00</td>
-                    <td>Trabalho</td>
+                    <td>Venda</td>
                     <td>05/02/2021</td>
                     </tr>
                     <tr>
@@ -44,7 +44,7 @@ import { Container } from "./styles";
                     <tr>
                     <td>Internet</td>
                     <td className="withdraw">-R$150,00</td>
-                    <td>Internet</td>
+                    <td>Casa</td>
                     <td>10/02/2021</td>
                     </tr>
                     <tr>
