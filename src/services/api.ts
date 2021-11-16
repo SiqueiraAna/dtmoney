@@ -4,7 +4,11 @@
 
 import axios from "axios";
 
-const api = axios.create({
+export const api = axios.create({
     //criando uma instância  do axios.
-    //  
+    //  Setar algumas informações que serão padrãos
+    // para todas as requisições da api.
+
+    baseURL:'http://localhost:3002/api'
+
 })

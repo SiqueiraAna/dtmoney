@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import { api } from "../../services/api";
 import { Container } from "./styles";
 
 
  export function TransactionsTable() {
     useEffect(() => {
-        fetch('http://localhost:3001')
+        api.get('transactions')
+            // .the(data => console.log(data))
 
     }, []);
 
@@ -27,19 +29,19 @@ import { Container } from "./styles";
                     <td>Desenvolvimento de websites</td>
                     <td className="deposit">R$6.000,00</td>
                     <td>Desenvolvimento</td>
-                    <td>05/02/2021</td>
+                    <td>07/02/2021</td>
                     </tr>
                     <tr>
                     <td>Monitor Samsung</td>
                     <td className="deposit">R$900,00</td>
                     <td>Venda</td>
-                    <td>05/02/2021</td>
+                    <td>09/02/2021</td>
                     </tr>
                     <tr>
                     <td>Aluguel do apartamento</td>
                     <td className="withdraw">-R$1.100,00</td>
                     <td>Casa</td>
-                    <td>15/02/2021</td>
+                    <td>10/02/2021</td>
                     </tr>
                     <tr>
                     <td>Internet</td>
@@ -51,19 +53,19 @@ import { Container } from "./styles";
                     <td>Luz</td>
                     <td className="withdraw">-R$120,00</td>
                     <td>Casa</td>
-                    <td>27/02/2021</td>
+                    <td>10/02/2021</td>
                     </tr>
                     <tr>
                     <td>Gás</td>
                     <td className="withdraw">-R$80,00</td>
                     <td>Casa</td>
-                    <td>28/02/2021</td>
+                    <td>10/02/2021</td>
                     </tr>
                     <tr>
                     <td>Água</td>
                     <td className="withdraw">-R$40,00</td>
                     <td>Casa</td>
-                    <td>28/02/2021</td>
+                    <td>10/02/2021</td>
                     </tr>
                  
                 </tbody>
