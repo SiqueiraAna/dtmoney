@@ -5,8 +5,11 @@ import { Container } from "./styles";
 
  export function TransactionsTable() {
     useEffect(() => {
-        api.get('transactions')
-            // .the(data => console.log(data))
+        api.get('/transactions')
+        //fazendo uma requisição do tipo get
+        // buscando uma informação de*-transactions-*
+        // a lista de transactions.
+            // .the(response => console.log(response.data))
 
     }, []);
 
@@ -26,7 +29,7 @@ import { Container } from "./styles";
 
                 <tbody>
                     <tr>
-                    <td>Desenvolvimento de websites</td>
+                    <td>Desenvolvimento de Websites</td>
                     <td className="deposit">R$6.000,00</td>
                     <td>Desenvolvimento</td>
                     <td>07/02/2021</td>
@@ -38,7 +41,7 @@ import { Container } from "./styles";
                     <td>09/02/2021</td>
                     </tr>
                     <tr>
-                    <td>Aluguel do apartamento</td>
+                    <td>Aluguel do Apartamento</td>
                     <td className="withdraw">-R$1.100,00</td>
                     <td>Casa</td>
                     <td>10/02/2021</td>

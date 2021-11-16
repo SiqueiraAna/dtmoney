@@ -9,6 +9,6 @@ export const api = axios.create({
     //  Setar algumas informações que serão padrãos
     // para todas as requisições da api.
 
-    baseURL:'http://localhost:3002/api'
+    baseURL:'http://localhost:3003/api',
 
 })
