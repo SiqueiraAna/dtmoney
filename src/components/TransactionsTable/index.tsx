@@ -30,10 +30,10 @@ import { Container } from "./styles";
                     <td>05/02/2021</td>
                     </tr>
                     <tr>
-                    <td>Monitor</td>
-                    <td className="deposit">-R$1.000,00</td>
-                    <td>Venda</td>
-                    <td>13/02/2021</td>
+                    <td>Monitor Samsung</td>
+                    <td className="deposit">R$900,00</td>
+                    <td>Trabalho</td>
+                    <td>05/02/2021</td>
                     </tr>
                     <tr>
                     <td>Aluguel do apartamento</td>
