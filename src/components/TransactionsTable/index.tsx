@@ -4,7 +4,7 @@ import { Container } from "./styles";
 
  export function TransactionsTable() {
     useEffect(() => {
-        fetch('http://localhost:3003')
+        fetch('http://localhost:3001')
 
     }, []);
 
@@ -31,7 +31,7 @@ import { Container } from "./styles";
                     </tr>
                     <tr>
                     <td>Monitor</td>
-                    <td className="deposit">-R$800,00</td>
+                    <td className="deposit">-R$1.000,00</td>
                     <td>Venda</td>
                     <td>13/02/2021</td>
                     </tr>
@@ -49,9 +49,21 @@ import { Container } from "./styles";
                     </tr>
                     <tr>
                     <td>Luz</td>
-                    <td className="withdraw">-R$80,00</td>
+                    <td className="withdraw">-R$120,00</td>
                     <td>Casa</td>
                     <td>27/02/2021</td>
+                    </tr>
+                    <tr>
+                    <td>Gás</td>
+                    <td className="withdraw">-R$80,00</td>
+                    <td>Casa</td>
+                    <td>28/02/2021</td>
+                    </tr>
+                    <tr>
+                    <td>Água</td>
+                    <td className="withdraw">-R$40,00</td>
+                    <td>Casa</td>
+                    <td>28/02/2021</td>
                     </tr>
                  
                 </tbody>
