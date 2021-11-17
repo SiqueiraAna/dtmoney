@@ -19,13 +19,13 @@ export const GlobalStyle = createGlobalStyle `
 
     * {
         margin: 0;
-        padding: 0;
+        padding: 0; 
         box-sizing: border-box;
     }
 
     // font-size: 16px; (Desktop)
     html{
-        @media (max-width: 1080px) {
+        @media (max-width: 1080px) { // largura maxima
             font-size: 93.75%; // 15px
         }
 
@@ -42,8 +42,8 @@ export const GlobalStyle = createGlobalStyle `
     }
 
     body, input, textarea, button {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+        font-family: 'Poppins', sans-serif; //font do body, input, textarea e button
+        font-weight: 400; //
     }
 
     h1, h2, h3, h4, h5, h6, strong {
@@ -52,11 +52,34 @@ export const GlobalStyle = createGlobalStyle `
     }
 
     button {
-        cursor: pointer;
+        cursor: pointer; //cursor especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento.
     }
 
     [disabled] {
-        opacity: 0.6;
+        opacity: 0.6; //opacidade
         cursor: not-allowed;
+    }
+
+    .react-modal-overlay {
+        background: rgba(0, 0, 0, 0.5); 
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .react-modal-content {
+        width: 100%; //largura
+        max-width: 576px; // largura maxima
+        background: var(---background); 
+        padding: 3rem;
+        position: relative;
+        border-radius: 0.25rem;
     }
 `
