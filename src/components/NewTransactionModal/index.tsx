@@ -21,6 +21,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 className="react-modal-content"
                 >       
                     <Container> 
+                        
                         <h2>Cadastrar transação</h2>
                         <input 
                             placeholder="Títutlo" 
@@ -36,7 +37,6 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                             Cadastrar
                         </button>
                         
-
                     </Container>
           </Modal>
 

@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle `
         --text-title: #363F5F;
         --text-body: #969CB3;
 
-        --background: #F0F2F;
+        --background: #f0f2f5;
         --shape: #ffffff;
     }
 
@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle `
     //REM -  medida no css para configurar o layout  - Ele retorna 1rem = ao tamanho do font-size da página
 
     body {
-        background: var(---background);
+        background: var(--background);
         -webkit-font-smoothing: antialiased;
     }
 
@@ -77,9 +77,9 @@ export const GlobalStyle = createGlobalStyle `
     .react-modal-content {
         width: 100%; //largura
         max-width: 576px; // largura maxima
-        background: var(---background); 
+        background: var(--background); 
         padding: 3rem;
         position: relative;
-        border-radius: 0.25rem;
+        border-radius: 0.24rem;
     }
 `
