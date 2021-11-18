@@ -2,6 +2,7 @@ import Modal from 'react-modal';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import closeImg  from '../../assets/close.svg';
+import { useState } from 'react';
 
 import { Container, TransactionTypeContainer } from './styles';
 
@@ -16,6 +17,10 @@ interface NewTransactionModalProps {
 }
 
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModalProps ) {
+    //criação do estado 
+    const [type, setType] = useState('deposit');
+
+    
     return (
         <Modal 
                 isOpen={isOpen} //propriedade -> isOpen e o estado. 

@@ -53,23 +53,15 @@ import { Container } from "./styles";
                     <td>10/02/2021</td>
                     </tr>
                     <tr>
-                    <td>Luz</td>
-                    <td className="withdraw">-R$120,00</td>
+                    <td>Alimentos</td>
+                    <td className="withdraw">-R$500,00</td>
                     <td>Casa</td>
                     <td>10/02/2021</td>
                     </tr>
-                    <tr>
-                    <td>Gás</td>
-                    <td className="withdraw">-R$80,00</td>
-                    <td>Casa</td>
-                    <td>10/02/2021</td>
-                    </tr>
-                    <tr>
-                    <td>Água</td>
-                    <td className="withdraw">-R$40,00</td>
-                    <td>Casa</td>
-                    <td>10/02/2021</td>
-                    </tr>
+                    
+
+
+                  
                  
                 </tbody>
             </table>
