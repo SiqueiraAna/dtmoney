@@ -50,10 +50,10 @@ export const Container = styled.form`
 `;
 
     export const TransactionTypeContainer =styled.div`
-        margin: 1rem 0;
+        margin: 1rem 0; // distanciar em cima e embaiaxo 
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr; // Duas colunas
+        gap: 0.5rem; // espaçamento entre cada um dos botões. 
         
         button{
             height: 4rem;
@@ -73,8 +73,8 @@ export const Container = styled.form`
             }
 
             img {
-                width: 20px; //
-                height: 20px; //
+                width: 20px; // Largura da imagem
+                height: 20px; // Altura da imagem 
             }
 
             span{

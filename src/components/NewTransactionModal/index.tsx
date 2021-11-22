@@ -1,14 +1,14 @@
-import Modal from 'react-modal';
-import incomeImg from '../../assets/income.svg';
-import outcomeImg from '../../assets/outcome.svg';
-import closeImg  from '../../assets/close.svg';
+import Modal from 'react-modal'; // importando o modal 
+import incomeImg from '../../assets/income.svg'; // Importando a img incomeImg
+import outcomeImg from '../../assets/outcome.svg'; // Importando a img  outcomeImg
+import closeImg  from '../../assets/close.svg'; // Importando a img closeImg 
 import { useState } from 'react';
 
 import { Container, TransactionTypeContainer } from './styles';
-
+// Importando o Container e TransactionTypeContainer
 
 interface NewTransactionModalProps {
-    //propriedades que ele vai receber. 
+    //Propriedades que ele vai receber. 
     isOpen: boolean;
     //Se o modal está aberto ou não
     onRequestClose: () => void;
@@ -30,7 +30,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 className="react-modal-content"
                 >     
 
-                    <button 
+                    <button  //Botão
                         type="button" 
                         onClick={onRequestClose} 
                         className="react-modal-close"
@@ -54,7 +54,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                                 type="button"
                             >
                                 <img src={incomeImg} alt="Entrada" />
-                                <span>Entrada</span>
+                                <span>Entrada</span> 
                             </button>
 
                             <button 
