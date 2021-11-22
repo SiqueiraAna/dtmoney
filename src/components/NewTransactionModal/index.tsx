@@ -19,6 +19,9 @@ interface NewTransactionModalProps {
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModalProps ) {
     //criação do estado 
     const [type, setType] = useState('deposit');
+    // type tipo da transação e o tipo de entrada (deposit)
+
+   
 
     
     return (
@@ -52,6 +55,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                         <TransactionTypeContainer>
                             <button 
                                 type="button"
+                                onClick={() => {setType('deposit'); }}
                             >
                                 <img src={incomeImg} alt="Entrada" />
                                 <span>Entrada</span> 
@@ -59,6 +63,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
 
                             <button 
                                 type="button"
+                                onClick={() => {setType('witthdraw'); }}
                             >
                                 <img src={outcomeImg} alt="Saída" />
                                 <span>Saída</span>

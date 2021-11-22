@@ -50,10 +50,10 @@ export const Container = styled.form`
 `;
 
     export const TransactionTypeContainer =styled.div`
-        margin: 1rem 0; // distanciar em cima e embaiaxo 
+        margin: 1rem 0; // Distanciar em cima e embaiaxo 
         display: grid;
         grid-template-columns: 1fr 1fr; // Duas colunas
-        gap: 0.5rem; // espaçamento entre cada um dos botões. 
+        gap: 0.5rem; // Espaçamento entre cada um dos botões. 
         
         button{
             height: 4rem;
@@ -66,9 +66,9 @@ export const Container = styled.form`
             align-items: center;
             justify-content: center;
 
-            transition: border-color 0.2s;
+            transition: border-color 0.2s; // 
 
-            &:hover {
+            &:hover { // escurecer a borda do botão, quando passar o mouse por cima. 
               border-color: ${darken(0.1, '#d7d7d7')};
             }
 
