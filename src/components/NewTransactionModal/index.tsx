@@ -4,7 +4,7 @@ import outcomeImg from '../../assets/outcome.svg'; // Importando a img  outcomeI
 import closeImg  from '../../assets/close.svg'; // Importando a img closeImg 
 import { useState } from 'react';
 
-import { Container, TransactionTypeContainer } from './styles';
+import { Container, TransactionTypeContainer, RadioBox } from './styles';
 // Importando o Container e TransactionTypeContainer
 
 interface NewTransactionModalProps {
@@ -21,6 +21,9 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
     const [type, setType] = useState('deposit');
     // type tipo da transação e o tipo de entrada (deposit)
 
+    function hadleCreateNewTransaction(){
+        
+    }
    
 
     
@@ -33,7 +36,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 className="react-modal-content"
                 >     
 
-                    <button  //Botão
+                    <button //Botão
                         type="button" 
                         onClick={onRequestClose} 
                         className="react-modal-close"
@@ -41,7 +44,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                         <img src={closeImg} alt="Fechar modal" />
                     </button>
 
-                    <Container> 
+                    <Container onSubmit={hadleCreateNewTransaction}> 
 
                         <h2>Cadastrar transação</h2>
                         <input 
@@ -53,21 +56,25 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                         />
 
                         <TransactionTypeContainer>
-                            <button 
+                            <RadioBox 
                                 type="button"
                                 onClick={() => {setType('deposit'); }}
+                                isActive={type === 'deposit'}
+                                activecolor="green"
                             >
                                 <img src={incomeImg} alt="Entrada" />
                                 <span>Entrada</span> 
-                            </button>
+                            </RadioBox>
 
-                            <button 
+                            <RadioBox 
                                 type="button"
-                                onClick={() => {setType('witthdraw'); }}
+                                onClick={() => {setType('withdraw'); }}
+                                isActive={type === 'withdraw'}
+                                activecolor="red"
                             >
                                 <img src={outcomeImg} alt="Saída" />
                                 <span>Saída</span>
-                            </button>
+                            </RadioBox>
                         </TransactionTypeContainer>
 
                         <input 
