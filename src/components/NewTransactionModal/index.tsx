@@ -72,8 +72,8 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                             <RadioBox 
                                 type="button"
                                 onClick={() => {setType('deposit'); }}
-                                isActive={type === 'deposit'}
-                                activecolor="green"
+                                isActive={type === 'deposit'} //estado de ativo
+                                activecolor="green" //ativando a cor do botão e cada - cor green
                             >
                                 <img src={incomeImg} alt="Entrada" />
                                 <span>Entrada</span> 
