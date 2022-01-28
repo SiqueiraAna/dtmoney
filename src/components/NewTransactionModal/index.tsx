@@ -6,7 +6,7 @@ import closeImg  from '../../assets/close.svg'; // Importando a img closeImg
 
 
 import { Container, TransactionTypeContainer, RadioBox } from './styles';
-// Importando o Container e TransactionTypeContainer
+//Importando o Container e TransactionTypeContainer
 
 interface NewTransactionModalProps {
     //Propriedades que ele vai receber. 
@@ -24,7 +24,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
     const [category, setCategory] =useState('');
     const [type, setType] = useState('deposit');
 
-    // type tipo da transação e o tipo de entrada (deposit)
+    //type tipo da transação e o tipo de entrada (deposit)
 
     function hadleCreateNewTransaction(event: FormEvent){
         event.preventDefault();
@@ -55,9 +55,9 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                             placeholder="Títutlo" 
                             value={title}
                             onChange={event => setTitle(event.target.value)}
-                            // toda vez que acontece uma digitação no input 
-                            // aparecer uma troca de valor no input
-                            // salva o novo valor digitado dentro da propriedade setTitle
+                            //Toda vez que acontece uma digitação no input 
+                            //Aparecer uma troca de valor no input
+                            //Salva o novo valor digitado dentro da propriedade setTitle
                         />
                         <input 
                             type="number"
