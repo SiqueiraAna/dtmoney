@@ -9,4 +9,4 @@ Este projeto foi realizado utilizando as seguintes tecnologias:
 * [Typescript](https://www.typescriptlang.org/)      
 * [Styled Components](https://styled-components.com/)
 * [MirageJS](https://miragejs.com/)
-* [Axios]()
+* [Axios](https://axios-http.com/)
