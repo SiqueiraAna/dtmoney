@@ -10,3 +10,6 @@ Este projeto foi realizado utilizando as seguintes tecnologias:
 * [Styled Components](https://styled-components.com/)
 * [MirageJS](https://miragejs.com/)
 * [Axios](https://axios-http.com/)
+
+
+<p align="center">Feito com 💙 por Ana Siqueira</p>
